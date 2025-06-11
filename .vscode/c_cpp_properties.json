@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "DeviceFamily_CC23X0R5",
+                "EXCLUDE_TRACE",
+                "BOOT_LOADER",
+                "SPI_CTL0_SPO_LOW=SPI_CTL0_SPO_LO",
+                "SPI_CTL0_SPO_HIGH=SPI_CTL0_SPO_HI",
+                "BAT_GLOBALE_MACRO_END"
+            ],
+            "windowsSdkVersion": "10.0.22000.0",
+            "compilerPath": "C:\\Arm_gcc_toolchain\\arm-gnu-toolchain-14.2.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-arm"
+        }
+    ],
+    "version": 4
+}

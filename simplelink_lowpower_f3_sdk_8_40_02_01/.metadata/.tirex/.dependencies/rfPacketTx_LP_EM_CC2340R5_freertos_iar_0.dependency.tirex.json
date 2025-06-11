@@ -1,0 +1,12 @@
+[
+    {
+        "files": [
+            "+lpf3_freertos.icf -> lpf3_freertos.icf",
+            "+../main_freertos.c -> main_freertos.c",
+            "+../../overview.rov.json -> overview.rov.json",
+            "+../../README.md -> README.md",
+            "+../../rfPacketTx.c -> rfPacketTx.c",
+            "+../rfPacketTx.syscfg -> rfPacketTx.syscfg"
+        ]
+    }
+]

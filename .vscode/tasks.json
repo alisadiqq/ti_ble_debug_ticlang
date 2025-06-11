@@ -1,0 +1,66 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Build basic_ble_app Debug",
+      "command": "cd basic_ble_offchip_gcc; ./build.sh -d",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {}
+    },
+    {
+      "type": "shell",
+      "label": "Build basic_ble_app Release",
+      "command": "cd basic_ble_offchip_gcc; ./build.sh -r",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {}
+    },
+    {
+      "type": "shell",
+      "label": "Clean basic_ble_app",
+      "command": "cd basic_ble_offchip_gcc; ./build.sh -c",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {}
+    },
+  ],
+  "inputs": [
+    {
+      "id": "product",
+      "type": "pickString",
+      "description": "Select product",
+      "options": [
+        "boreas",
+        "epod4",
+        "etna",
+        "fleetwood"
+      ]
+    },
+    {
+      "id": "fwMajor",
+      "type": "promptString",
+      "description": "Input Major version",
+      "default": "0"
+    },
+    {
+      "id": "fwMinor",
+      "type": "promptString",
+      "description": "Input Minor version",
+      "default": "0"
+    },
+    {
+      "id": "fwPatch",
+      "type": "promptString",
+      "description": "Input Patch version",
+      "default": "0"
+    }
+  ]
+}

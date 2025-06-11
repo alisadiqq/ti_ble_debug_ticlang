@@ -1,0 +1,570 @@
+[
+    {
+        "name": "Release Notes",
+        "resourceType": "file",
+        "location": "../../release_notes_simplelink_lowpower_f3_sdk_8_40_02_01.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "Documentation Overview",
+        "resourceType": "file",
+        "location": "../../docs/Documentation_Overview.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "Quick Start Guide",
+        "resourceType": "file",
+        "location": "../../docs/simplelink_mcu_sdk/Quick_Start_Guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "SimpleLink MCU SDK User's Guide",
+        "resourceType": "file",
+        "location": "../../docs/simplelink_mcu_sdk/Users_Guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "BLE5-Stack User's Guide",
+        "resourceType": "file",
+        "location": "../../docs/ble5stack/ble5stack-users-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "BLE5-Stack"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "BLE5-Stack Quick Start Guide",
+        "resourceType": "file",
+        "location": "../../docs/ble5stack/ble5stack-quickstart-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "BLE5-Stack"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "BLE5-Stack Migration Guide",
+        "resourceType": "file",
+        "location": "../../docs/ble5stack/ble5stack-migration-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "BLE5-Stack"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "BLE5-Stack Debugging Guide",
+        "resourceType": "file",
+        "location": "../../docs/ble5stack/ble5stack-debugging-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "BLE5-Stack"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "Proprietary RF Quick Start Guide",
+        "resourceType": "file",
+        "location": "../../docs/proprietary-rf/proprietary-rf-quick-start-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Proprietary RF"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "Proprietary RF Migration Guide",
+        "resourceType": "file",
+        "location": "../../docs/proprietary-rf/proprietary-rf-migration-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Proprietary RF"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "Proprietary RF User's Guide",
+        "resourceType": "file",
+        "location": "../../docs/proprietary-rf/proprietary-rf-users-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Proprietary RF"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "Proprietary RF Examples User's Guide",
+        "resourceType": "file",
+        "location": "../../docs/proprietary-rf/proprietary-rf-examples-users-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Proprietary RF"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "TI-POSIX User's Guide",
+        "resourceType": "file",
+        "location": "../../docs/tiposix/Users_Guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents",
+            "TI-RTOS Kernel (SYS/BIOS)"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Proprietary RF"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "Zigbee Quick Start Guide",
+        "resourceType": "file",
+        "location": "../../docs/zigbee/zigbee-quick-start-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Zigbee"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "Zigbee User's Guide",
+        "resourceType": "file",
+        "location": "../../docs/zigbee/zigbee-users-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Zigbee"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "ZBOSS User's Guide",
+        "resourceType": "file",
+        "location": "../../docs/zigbee/zboss-user-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Zigbee"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "Zigbee Migration Guide",
+        "resourceType": "file",
+        "location": "../../docs/zigbee/zigbee-migration-guide.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "categories": [
+            "Documents"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Zigbee"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "SimpleLink Graphics Library Release Notes",
+        "resourceType": "file",
+        "location": "../../docs/grlib/release_notes_grlib_5_00_00_05.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Graphics Library"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "TI BLE5-Stack Release Notes",
+        "resourceType": "file",
+        "location": "../../docs/ble5stack/release_notes_ble5stack_3_03_04_00.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "BLE5-Stack"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "SimpleLink Common Components Module (SCCM) Release Notes",
+        "resourceType": "file",
+        "location": "../../docs/sccm/release_notes_sccm_8_40_01.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Common Components"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "Zigbee Release Notes",
+        "resourceType": "file",
+        "location": "../../docs/zigbee/release_notes_zigbee_1_00_00.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Zigbee"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "CoreSDK Release Notes",
+        "resourceType": "file",
+        "location": "../../docs/simplelink_mcu_sdk/release_notes_coresdk_lpf3_8_40_00_09.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "TI Drivers"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "RCL Release Notes",
+        "resourceType": "file",
+        "location": "../../docs/rcl/rcl_release_notes.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "RCL"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    },
+    {
+        "name": "TI Proprietary RF Release Notes",
+        "resourceType": "file",
+        "location": "../../docs/proprietary-rf/release_notes_proprietary-rf_8_40_00.html",
+        "devices": [
+            "CC2340R5"
+        ],
+        "devtools": [
+            "LP-EM-CC2340R5"
+        ],
+        "mainCategories": [
+            [
+                "Documents"
+            ]
+        ],
+        "subCategories": [
+            "Proprietary RF"
+        ],
+        "resourceClass": [
+            "document"
+        ]
+    }
+]

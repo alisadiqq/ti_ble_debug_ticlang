@@ -1,0 +1,22 @@
+[{
+        "name": "Examples",
+        "resourceClass":["example"],
+        "resourceSubClass":["example.outofbox"],
+        "mainCategories": [
+            []
+        ],
+        "subCategories": [],
+        "resourceType": "categoryInfo",
+        "description": ""
+    },
+    {
+        "name": "Documents",
+        "resourceClass":["document"],
+        "mainCategories": [
+            []
+        ],
+        "subCategories": [],
+        "resourceType": "categoryInfo",
+        "description": ""
+    }
+]

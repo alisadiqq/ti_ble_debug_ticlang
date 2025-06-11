@@ -1,0 +1,37 @@
+{
+    "name": "simplelink_lowpower_f3_sdk",
+    "displayName": "SimpleLink Low Power F3 SDK",
+    "version": "8.40.02.01",
+    "documentationPath": "../docs",
+    "includePaths": [
+        "../source",
+        "../kernel"
+    ],
+    "components": [
+        "/ti/ble5stack/aoa/aoa.component.js",
+        "/ti/ble5stack/ble.component.js",
+        "/ti/common/common.component.js",
+        "/ti/common/migration.component.js",
+        "/ti/devices/devices.component.js",
+        "/ti/devices/radioconfig/radioconfig.component.js",
+        "/ti/drivers/drivers.component.js",
+        "/ti/drivers/rcl.component.js",
+        "/ti/log/drivers.component.js",
+        "/ti/log/utils.component.js",
+        "/ti/posix/tiposix.component.js",
+        "/ti/utils/tiutils.component.js",
+        "/ti/utils/build/build.component.js",
+        "/ti/utils/rov/rov.component.js",
+        "/ti/zigbee/zigbee.component.js",
+        "/freertos/freertos.component.js"
+    ],
+    "devices": [
+        "CC2[37].*"
+    ],
+    "rtos": [
+        "freertos",
+        "none",
+        "nortos"
+    ],
+    "minToolVersion": "1.22.0"
+}

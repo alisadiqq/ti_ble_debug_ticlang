@@ -1,0 +1,122 @@
+%%{
+/*
+ * Copyright (c) 2022-2024, Texas Instruments Incorporated
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * *  Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ *
+ * *  Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * *  Neither the name of Texas Instruments Incorporated nor the names of
+ *    its contributors may be used to endorse or promote products derived
+ *    from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+ * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+ * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+/*
+ *  ======== RCL.Board.c.xdt ========
+ */
+let Common = system.getScript("/ti/drivers/Common.js");
+let GPIO = system.getScript("/ti/drivers/GPIO.syscfg.js");
+let rclGpio = system.getScript("/ti/drivers/rcl/rclgpio.syscfg.js");
+let RCL = args[0];
+let instances = RCL.$instances;
+const rclStatic = RCL.$static;
+
+/* This function generates all necessary strings  */
+function getLrfdStrings(pin, pinInstance, pinFunction) {
+    let lrfMuxNumber = -1
+    let lrfdNumber = 0
+    let lrfMaxPinNumber = 7
+    let gpioSelTreshold = 3
+    const solution = rclStatic.lrfGpio.$solution;
+    let peripheral = system.deviceData.peripherals[solution.peripheralName];
+    for (; lrfdNumber <= lrfMaxPinNumber; lrfdNumber++) {
+        lrfMuxNumber = GPIO._getPinMuxMode(
+        peripheral.peripheralPins["LRFD" + lrfdNumber.toString()],
+        pin.$solution.devicePinName);
+
+        if (lrfMuxNumber != -1) {break; }
+    }
+    let dioPin = GPIO.getDioForInst(pinInstance);
+    let gpioSelNumber = 0
+    if (lrfdNumber > gpioSelTreshold){
+       gpioSelNumber = 1
+    }
+    let gpioSelStr1 = 'LRFDDBELL_O_GPOSEL' + gpioSelNumber.toString()
+    let gpioSelStr2 = 'LRFDDBELL_GPOSEL' + gpioSelNumber.toString()
+    let regWriteStr = 'HWREG_WRITE_LRF(LRFDDBELL_BASE + ' + gpioSelStr1 + ')'
+    let regReadStr = 'HWREG_READ_LRF(LRFDDBELL_BASE + ' + gpioSelStr1 + ')'
+    let portCfgStr = 'IOC_IOC' + dioPin.toString() + '_PORTCFG_PFUNC' +  lrfMuxNumber.toString()
+    let setLrfdStr = regWriteStr + ' = ' + regReadStr + '| (' + gpioSelStr2 + '_SRC' + lrfdNumber + '_' + pinFunction + ')'
+    let setGpioStr = 'GPIO_setConfigAndMux' + '(' + dioPin + ', GPIO_CFG_NO_DIR, ' + portCfgStr + ')'
+    let resetGpioStr = 'GPIO_resetConfig' + '(' + dioPin + ')'
+    return [setLrfdStr, setGpioStr, resetGpioStr]
+ }
+
+%%}
+
+% if(rclStatic.lrfGpio){
+/*
+ *  =============================== RCL GPIOS ===============================
+ */
+#include DeviceFamily_constructPath(inc/hw_lrfddbell.h)
+#include DeviceFamily_constructPath(inc/hw_ioc.h)
+#include <ti/drivers/rcl/LRF.h>
+
+/*
+ *  ======== RCL_GPIO_enable ========
+ */
+void RCL_GPIO_enable (void)
+{
+%rclGpio.signalList.forEach(signal => {
+%   let pin = rclStatic.lrfGpio[`${signal.name.toLowerCase()}Pin`]
+%        if (pin && signal.name != "RFCTRC")
+%        {
+%           let pinInstance = rclStatic[`${signal.name.toLowerCase()}PinInstance`]
+%           let lrfdStringList0 = getLrfdStrings(pin, pinInstance, signal.name)
+
+    /* `signal.name` */
+    `lrfdStringList0[0]`;
+    `lrfdStringList0[1]`;
+%        }
+%    });
+}
+
+/*
+ *  ======== RCL_GPIO_disable ========
+ */
+void RCL_GPIO_disable (void)
+{
+%rclGpio.signalList.forEach(signal => {
+%   let pin = rclStatic.lrfGpio[`${signal.name.toLowerCase()}Pin`]
+%        if (pin && signal.name != "RFCTRC")
+%        {
+%           let pinInstance = rclStatic[`${signal.name.toLowerCase()}PinInstance`]
+%           let lrfdStringList0 = getLrfdStrings(pin, pinInstance, signal.name)
+
+    /* `signal.name` */
+    `lrfdStringList0[2]`;
+%        }
+%    });
+}
+
+%}
